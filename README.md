@@ -18,7 +18,7 @@ console.log( 0.3 - 0.1 );  //输出 0.19999999999999998 <br/>
 
 
 1: 引入compute.js <br/>
-	  	<script src="compute.js" type="text/javascript" charset="utf-8"></script>
+	  	<code><script src="compute.js" type="text/javascript" charset="utf-8"></script></code>
 	  
 2: 加减乘除使用方法：<br/>
 		调用Compute方法，传入3个参数。第一个参数为操作数1，第二个参数为操作数2，第三个参数为操作符（'+'、'-'、'*'、'/'）<br/>
