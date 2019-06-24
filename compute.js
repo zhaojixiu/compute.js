@@ -1,4 +1,4 @@
-//补
+//补0
 function padding0(num) {
     let str = ''
     while (num--) str += '0'
