@@ -1,17 +1,11 @@
-/**
- * 补0
- * @param {*} num 0个数
- */
+//补
 function padding0(num) {
     let str = ''
     while (num--) str += '0'
     return str
 }
 
-/**
- * 将科学记数法转为普通字符串
- * @param {Number} number
- */
+//科学记数法 => 字符串
 function noExponent(number) {
     const data = String(number).split(/[eE]/)
     if (data.length == 1) return data[0]
@@ -47,11 +41,11 @@ function split(number) {
 }
 
 /**
- * 计算
- * @param {*} x 操作数1
- * @param {*} y 操作数2
- * @param {*} sign 操作符
- * @param {*} z 精度
+ * 判断传入的操作符  返回对应的计算公式
+ * x: 操作数1
+ * y: 操作数2
+ * sign: 操作符
+ * z: 精度
  */
 function operate(x, y, sign, z) {
     switch (sign) {
@@ -64,10 +58,9 @@ function operate(x, y, sign, z) {
 
 /**
  * 解决小数精度问题
- * @param {*} x 操作数1
- * @param {*} y 操作数2
- * @param {*} sign 操作符
- * Compute(0.3, 0.2, '-')
+ * x: 操作数1
+ * y: 操作数2
+ * sign: 操作符
  */
 function Compute(x, y, sign) {
     const arrL = split(x)
@@ -89,17 +82,14 @@ function Compute(x, y, sign) {
 }
 
 /**
+ * 计算方法：
  * 加: Compute(0.3, 0.2, '+')
  * 减: Compute(0.3, 0.2, '-')
  * 乘: Compute(0.3, 0.2, '*')
  * 除: Compute(0.3, 0.2, '/')
  */
 
-/**
- * 四舍五入
- * @param {*} number
- * @param {*} fraction
- */
+//四舍五入函数
 function Round(number, fraction) {
     return Math.round(number * Math.pow(10, fraction)) / Math.pow(10, fraction)
 }
