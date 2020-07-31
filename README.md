@@ -21,10 +21,10 @@ console.log( 0.3 - 0.1 );  //输出 0.19999999999999998 <br/>
 	  	<code><script src="compute.js" type="text/javascript" charset="utf-8"></script></code>
 	  
 2: 加减乘除使用方法：<br/>
-		调用Compute方法，传入3个参数。第一个参数为操作数1，第二个参数为操作数2，第三个参数为操作符（'+'、'-'、'*'、'/'）<br/>
+		调用Compute方法，传入3个参数。第一个参数为操作数1，第二个参数为操作数2，第三个参数为操作符（'+'、'-'、'\*\'、'/'）<br/>
       	加 : <code>Compute(0.3, 0.2, '+')</code> <br/>
       	减 : <code>Compute(0.3, 0.2, '-')</code> <br/>
-      	乘 : <code>Compute(0.3, 0.2, '*')</code> <br/>
+      	乘 : <code>Compute(0.3, 0.2, '\*\')</code> <br/>
       	除 : <code>Compute(0.3, 0.2, '/')</code> <br/>
         
 3: 四舍五入使用方法：<br/>
