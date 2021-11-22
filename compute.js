@@ -25,6 +25,12 @@ function noExponent(number) {
     return str + z
 }
 
+/**
+ * 可单独使用noExponent  用于科学计数法转字符串
+ * 【暂时这样使用  后期代码优化】
+ * number: 科学计数
+ */
+
 function split(number) {
     let str
     if (number < 1e-6) {
